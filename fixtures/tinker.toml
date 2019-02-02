@@ -1,0 +1,2 @@
+[dotenv]
+tmpl = "docker run -it -p 80:80 {{- range $key, $ele := .}} -e {{$key}}:{{$ele}}{{end}} <container>" 
